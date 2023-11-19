@@ -10,12 +10,8 @@ const formatsLogger = app.get("env") === "development" ? "dev" : "short";
 
 app.use(logger(formatsLogger));
 app.use(cors());
-<<<<<<< Updated upstream
-// app.use(express.json());
-=======
 app.use(express.json());
 app.use(express.static("public"));
->>>>>>> Stashed changes
 
 // !!! ROUTER MAIN PATH
 app.use("/api/contacts", contactsRouter);
